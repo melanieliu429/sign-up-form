@@ -113,9 +113,11 @@ input:focus {
 
 button {
     background-color: #596D48;
+    border: 2px solid #596D48;
     color: white;
     font-size: large;
     margin-bottom: 5px;
+    border-radius: 4px;
 }
 
 #bottom-text {

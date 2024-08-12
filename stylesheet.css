@@ -17,7 +17,7 @@
 #image-container {
     position: relative;
     width: 33vw;
-    height: 90vh;
+    height: 100%;
 }
 
 #background-img {
@@ -40,13 +40,13 @@
 
 #logo {
     width: 100px;
-    z-index: 1; /* Ensure the logo is above the background */
+    z-index: 1; 
 }
 
 #logo-text {
     font-family: "norsebold";
     font-size: 4rem;
-    z-index: 1; /* Ensure the text is above the background */
+    z-index: 1; 
 }
 
 body {
@@ -71,24 +71,27 @@ body {
 
 #top-text > div {
     font-size: x-large;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin: 3rem;
 }
 
 #info {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     background-color: white;
-    padding: 4vh;
+    padding: 3rem;
 }
 
-#info > div {
+#inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+#inputs > div {
     display: flex;
     flex-direction: column;
     font-size: x-small;
     max-width: 200px;
 }
+
+
 
 input {
     border: 2px solid #E5E7EB;
@@ -121,7 +124,7 @@ button {
 }
 
 #bottom-text {
-    margin-left: 20px;
+    margin: 3rem;
     font-size: medium;
 }
 
